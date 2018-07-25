@@ -8,7 +8,8 @@ FragmentDemo 演示了如何在 Android 工程中集成 [TalkingData Analytics S
 ### How
 
 1. 访问 [TalkingData 官网](https://www.talkingdata.com/) 注册帐号并按照提示申请 `AppId`。
-2. 在 `AndroidManifest.xml` 中添加下面的权限：
+2. 访问【SDK 定制网页】(https://www.talkingdata.com/spa/sdk/#/config?productLine=AppAnalytics&sdkPlatform=Android),申请SDK jar包，导入到工程目录的libs下。
+3. 在 `AndroidManifest.xml` 中添加下面的基本权限：
 
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -16,7 +17,7 @@ FragmentDemo 演示了如何在 Android 工程中集成 [TalkingData Analytics S
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"  />
 <uses-permission android:name="android.permission.GET_TASKS"  />
 
-3. 在 Android 工程 `Application` 类的 `onCreate` 方法中执行下面的代码初始化 SDK：
+4. 在 Android 工程 `Application` 类的 `onCreate` 方法中执行下面的代码初始化 SDK：
 
 TCAgent.LOG_ON = true;
 TCAgent.init(this, "[Your AppId]", "[Your ChannelId]");
@@ -31,7 +32,7 @@ TCAgent.setReportUncaughtExceptions(true);
 
 TCAgent.init(this);
 
-4. `MainActivity` 类中演示了如何进行 Activity 生命周期的跟踪和自定义事件的记录。
-5. `FMActivity` 类中演示了如何对 Fragment 生命周期进行跟踪。
+5. `MainActivity` 类中演示了如何进行 Activity 生命周期的跟踪和自定义事件的记录。
+6. `FMActivity` 类中演示了如何对 Fragment 生命周期进行跟踪。
 
 更详细的 SDK 接口解释和集成文档请参考 [Analytics SDK 集成文档](https://www.talkingdata.com/app/document_web/index.jsp?statistics)。

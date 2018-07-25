@@ -8,7 +8,7 @@ FragmentDemo 演示了如何在 Android 工程中集成 [TalkingData Analytics S
 ### How
 
 1. 访问 [TalkingData 官网](https://www.talkingdata.com/) 注册帐号并按照提示申请 `AppId`。
-2. 访问【SDK 定制网页】(https://www.talkingdata.com/spa/sdk/#/config?productLine=AppAnalytics&sdkPlatform=Android),申请SDK jar包，导入到工程目录的libs下。
+2. 访问 [SDK 定制网页](https://www.talkingdata.com/spa/sdk/#/config?productLine=AppAnalytics&sdkPlatform=Android),申请SDK jar包，导入到工程目录的libs下。
 3. 在 `AndroidManifest.xml` 中添加下面的基本权限：
 
 <uses-permission android:name="android.permission.INTERNET" />

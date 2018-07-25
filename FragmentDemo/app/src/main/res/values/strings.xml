@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TDAnalyticsDemo</string>
+    <string name="button_eventWithId">Custom Event, id only</string>
+    <string name="button_eventWithIdAndLabel">Custom Event, id and label</string>
+    <string name="button_eventWithIdAndLabelAndExtraData">Custom Event, id, label and extra data</string>
+    <string name="button_error">Record Error</string>
+    <string name="button_crash">Record uncaught exception</string>
+    <string name="button_fragment">Test Fragment in replace mode</string>
+    <string name="button_fragment_hideshow">Test Fragment in hide-show mode</string>
+    <string name="title_activity_main">Test Panel</string>
+
+</resources>

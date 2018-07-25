@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Demonstration of hiding and showing fragments." />
+
+    <LinearLayout android:orientation="horizontal" android:padding="4dip"
+        android:gravity="center_vertical" android:layout_weight="1"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <Button android:id="@+id/frag1hide"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Hide" />
+
+        <fragment android:name="com.talkingdata.analytics.demo.FragmentHideShow$FirstFragment"
+            android:id="@+id/fragment1" android:layout_weight="1"
+            android:layout_width="0px" android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal" android:padding="4dip"
+        android:gravity="center_vertical" android:layout_weight="1"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <Button android:id="@+id/frag2hide"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Hide" />
+
+        <fragment android:name="com.talkingdata.analytics.demo.FragmentHideShow$SecondFragment"
+            android:id="@+id/fragment2" android:layout_weight="1"
+            android:layout_width="0px" android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

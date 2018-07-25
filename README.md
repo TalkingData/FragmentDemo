@@ -35,4 +35,4 @@ TCAgent.init(this);
 5. `MainActivity` 类中演示了如何进行 Activity 生命周期的跟踪和自定义事件的记录。
 6. `FMActivity` 类中演示了如何对 Fragment 生命周期进行跟踪。
 
-更详细的 SDK 接口解释和集成文档请参考 [Analytics SDK 集成文档](https://www.talkingdata.com/app/document_web/index.jsp?statistics)。
+更详细的 SDK 接口解释和集成文档请参考 [App Analytics SDK 集成文档](https://www.talkingdata.com/app/document_web/index.jsp?statistics)。
